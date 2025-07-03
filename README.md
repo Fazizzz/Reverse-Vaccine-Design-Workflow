@@ -2,20 +2,30 @@
 
 ## Project by Muhammad Faizan Khalid
 
+_______________________________________________________
+## Table of Contents
+- [Introduction](#introduction)
+- [Data Retrieval and Sequence Availability](#data-retrieval-and-sequence-availability)
+- [Functional Analysis of Antigenic Proteins](#functional-analysis-of-antigenic-proteins)
+- [Analysis of Secondary and Tertiary Structures of Proteins](#analysis-of-secondary-and-tertiary-structures-of-proteins)
+- [Analysis and Prediction of Epitopes Antigen Interactions](#analysis-and-prediction-of-epitopes-antigen-interactions)
+- [Analysis of Population Coverage of Peptide Relevant Alleles](#analysis-of-population-coverage-of-peptide-relevant-alleles)
+- [Conclusion](#conclusion)
+- [References](#references)
+- [Appendix](#appendix) 
 
+## Introduction:
 
-### Introduction:
+Anthrax is one of the deadliest bioweapons in the world. Anthrax is the colloquial name for the bacterium Bacillus anthracis, which can be weaponized as spores that can be inhaled. The main mechanism of toxicity is the toxin the bacterium produces which can be toxic on its own to eukaryotic cells. The anthrax toxin is comprised of three non-toxic proteins that combine on eukaryotic host cell surfaces to make noncovalent, toxic complexes<sup>1</sup>. These proteins include Lethal Factor (LF), Edema Factor (EF) and Protective Antigen (PA). 
 
-Anthrax is one of the deadliest bioweapons in the world. Anthrax is the colloquial name for the bacterium Bacillus anthracis, which can be weaponized as spores that can be inhaled. The main mechanism of toxicity is the toxin the bacterium produces which can be toxic on its own to eukaryotic cells. The anthrax toxin is comprised of three non-toxic proteins that combine on eukaryotic host cell surfaces to make noncovalent, toxic complexes1. These proteins include Lethal Factor (LF), Edema Factor (EF) and Protective Antigen (PA). 
+As part of a reverse vaccine engineering workflow, this document will go through and highlight the key the steps and outputs for the design of a hypothetical toxoid vaccine targeting the PA component of the anthrax toxin. The goal of the vaccine would be to design an antigen based of the PA protein in the toxin, to illicit an immune response in the host so that any future exposure would result in the anthrax toxin being neutralized by the bodies natural immune system. PA was selected as the target for a vaccine due to its low lethality on its own and functionality in cell binding which results in subsequent self-assembly into a ring-shaped homo-oligomer pre-channel that allows entry of the LF and EF components of the toxin into the cell cytosol. Leading to death of the host cell<sup>1</sup>. 
 
-As part of a reverse vaccine engineering workflow, this document will go through and highlight the key the steps and outputs for the design of a hypothetical toxoid vaccine targeting the PA component of the anthrax toxin. The goal of the vaccine would be to design an antigen based of the PA protein in the toxin, to illicit an immune response in the host so that any future exposure would result in the anthrax toxin being neutralized by the bodies natural immune system. PA was selected as the target for a vaccine due to its low lethality on its own and functionality in cell binding which results in subsequent self-assembly into a ring-shaped homo-oligomer pre-channel that allows entry of the LF and EF components of the toxin into the cell cytosol. Leading to death of the host cell1. 
+## Data Retrieval and Sequence Availability:
 
-### Data Retrieval and Sequence Availability:
-
-The first step in reverse vaccine development is obtaining candidate sequences for the target antigen molecule through either genomics analysis or via looking through public databases. In the case of the anthrax PA protein, the sequence for the protein is well defined and available online through the NCBI protein database2. In this workflow, three different candidate sequences are used, with one sequence derived from a metagenomics assembly3. This was done to contrast structures of the available antigenic proteins and compare between reference and wild type proteins for the purposes of developing a theoretical vaccine.
+The first step in reverse vaccine development is obtaining candidate sequences for the target antigen molecule through either genomics analysis or via looking through public databases. In the case of the anthrax PA protein, the sequence for the protein is well defined and available online through the NCBI protein database<sup>2</sup>. In this workflow, three different candidate sequences are used, with one sequence derived from a metagenomics assembly<sup>3</sup>. This was done to contrast structures of the available antigenic proteins and compare between reference and wild type proteins for the purposes of developing a theoretical vaccine.
 
 #### Protein 1:
-
+```
 >WP\_338259392.1 anthrax toxin protective antigen, partial [Bacillus anthracis]
 
 MKKRKVLIPLMALSTILVSSTGNLEVIQAEVKQENRLLNESESSSQGLLGYYFSDLNFQAPMVVTSSTTG
@@ -37,7 +47,7 @@ YNFENGRVRVDTGSNWSEVLPQIQETTARIIFNGKDLNLVERRIAAVNPSDPLETTKPDMTLKEALKIAF
 GFNEPNGNLQYQGKDITEFDFNFDQQTSQNIKNQLAELNVTNIYTVLDKIKLNAKMNILIRDKRFHYDRN
 
 NIAVGADESVVKEAHREVINSSTEGLLLN
-
+```
 
 
 #### Protein 2:
@@ -96,9 +106,9 @@ GKTFIDFKKYNDKLPLYISNPNYKVNVYAVTKENTIINPSENGDTSTNGIKKILIFSKKGYEIG
 
 These will be the sequences for the target antigenic protein and used in subsequent functional analysis. Typically, datamining can be used to study and contrast hundreds of sequences for a candidate antigen simultaneously. Three antigens is an adequate number to show variety and selection for a sample workflow. 
 
-### Functional Analysis of Antigenic Proteins:
+## Functional Analysis of Antigenic Proteins:
 
-#### Prediction of antigenicity:
+#### 1) Prediction of antigenicity:
 
 In vaccine design, high antigenicity is important for target recognition. Antigenicity refers to a substance’s ability to be recognized by the immune system and its components like B cell receptors, antibodies and T cell receptors. Put simply, it is a measure of how well a protein or molecule functions as an antigen. 
 
@@ -110,7 +120,7 @@ For this workshop, the antigenicity of the candidate sequences is tested using 3
 
 From the results in Table 1, it can be observed that all three of the selected candidates are probable candidates for vaccine antigens. Notably, Protein 1 has the higher score across metrics but protein 3, which is the wild type, has more antigenic determinants. Figures for antigenic scores by protein sequence numbers are presented in the appendix (Appendix Figures 1-3) and data tables from the outputs are included in supplementary materials.
 
-#### Prediction of allergenic response to antigen (Allergenicity):
+#### 2) Prediction of allergenic response to antigen (Allergenicity):
 
 Allergenicity refers to the ability of a protein or molecule to trigger the body’s immune system to produce IgE antibodies and cause hypersensitivity reactions, such as rashes, asthma, or even anaphylaxis. In simple terms it is a measure of an antigens ability to cause an allergic reaction. Ideally, a vaccine candidate should not elicit any allergic response from the host and should not be considered an allergen. The immune response should be directed at producing targeted antibodies and recruiting the right kind of T and B-cells to remove the pathogen from the host. 
 
@@ -124,7 +134,7 @@ Table 2: Table of allergenicity predictions for candidate proteins using two dif
 
 Two of three methods utilized in this analysis indicate that the candidate proteins are non-allergens. While their peptide sequences can later be evaluated for toxicity on their own and modified during manufacturing, this is enough evidence to proceed with all three of the vaccine candidates to the next step in the workflow.
 
-#### Analysis of physio-chemical properties of antigen proteins:
+#### 3) Analysis of physio-chemical properties of antigen proteins:
 
 Physio-chemical proteins are an important factor to consider in antigen design. The hydrophobicity, half-life and composition of amino acids play a key role in how stable a molecule is. A vaccine candidate should be stable, have a reasonable half-life and not have strong charges which can hinder its binding to immune cells. 
 
@@ -152,7 +162,7 @@ From this analysis we can select Protein 1 as the candidate to move forward in t
 
 
 
-### Analysis and Prediction of Epitopes Antigen Interactions:
+## Analysis and Prediction of Epitopes Antigen Interactions:
 
 The next step in the vaccine design process is to model and predict the epitopes on the candidate antigen. Epitopes are the key binding regions on the antigen molecule that will interact with the host immune system. Peptide sequences in the case of proteins. There are several tools to do this as there are multiple cell types to consider with their own unique epitopes on the target antigen. From the previous analysis we know Protein 1 is an ideal candidate with good stability and antigenic properties, so it can be selected for epitope prediction in the vaccine design process. 
 
@@ -306,7 +316,7 @@ Overall, the results indicate that Protein 1 is rich in epitopes that can illici
 
 ### 
 
-### Conclusion:
+## Conclusion:
 
 Having gone through the steps of the toxoid vaccine design, it is worth mentioning that vaccines already exist for the bacterium responsible for the toxin34. Before the use of anthrax as a bioweapon, there were already vaccines available due to agricultural exposure to the bacterium and its spores34. Following the use of the spores as a bioweapon, newer vaccine models were generated and typically relied on weakened strains of the bacterium and relied on antibiotics to remove the bacteria before it could overwhelm the body with toxins. To date there are several licensed products that can be considered toxin vaccines for anthrax35. 
 
@@ -318,7 +328,7 @@ While there are hundreds and thousands of other similar structures to consider a
 
 The next logical steps in developing a product would require more detailed modeling and further modifications necessary for manufacturing and synthesis. Steps that exceed the scope of this project. The materials and analysis generated as part of this project however are necessary for any future design aspects and represent a key part of the reverse vaccine design pipeline. Hopefully this analysis reduces barriers in any future vaccine design for anthrax toxin and is a resource for those looking to learn the process for reverse vaccine design.
 
-### References:
+## References:
 
 Kintzer, A. F., Thoren, K. L., Sterling, H. J., Dong, K. C., Feld, G. K., Tang, I. I., ... & Krantz, B. A. (2009). The protective antigen component of anthrax toxin forms functional octameric complexes. Journal of molecular biology, 392(3), 614-629.
 
@@ -412,7 +422,7 @@ Wang, J. Y., & Roehrl, M. H. (2005). Anthrax vaccine design: strategies to achie
 
 
 
-### Appendix:
+## Appendix:
 
 #### 
 
