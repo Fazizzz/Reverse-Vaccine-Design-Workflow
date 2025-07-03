@@ -52,6 +52,7 @@ NIAVGADESVVKEAHREVINSSTEGLLLN
 
 #### Protein 2:
 
+```
 >WP\_154166101.1 anthrax toxin protective antigen, partial [Bacillus anthracis]
 
 MKKRKVLIPLMALSTILVSSTGNLEVIQAEVKQENRLLNESESSSQGLLGYYFSDLNFQAPMVVTSSTTG
@@ -73,11 +74,12 @@ YNFENGRVRVDTGSNWSEVLPQIQETTARIIFNGKDLNLVERRIAAVNPSDPLETTKPDMTLKEALKIAF
 GFNEPNGNLQYQGKDITEFDFNFDQQTSQNIKNQLAELNATNIYTVLDKSKLNAKMNILIRDKRFHYDRK
 
 NIAVGAEESVVKEAHREVINTSTEGLLLNIDKDIRKILSGYIVEIEDTEGLK
-
+```
 
 
 #### Protein 3:
 
+```
 >PNS63514.1 anthrax toxin protective antigen [Bacillus anthracis]
 
 MKKRKVLIPLMALSTILVSSTGNLEVIQAEVKQENRLLNESESSSQGLLGYYFSDLNFQAPMVVTSSTTG
@@ -101,7 +103,7 @@ GFNEPNGNLQYQGKDITEFDFNFDQQTSQNIKNQLAELNATNIYTVLDKIKLNAKMNILIRDKRFHYDRN
 NIAVGADESVVKEAHREVINSSTEGLLLNIDKDIRKILSGYIVEIEDTEGLKEVINDRYDMLNISSLRQD
 
 GKTFIDFKKYNDKLPLYISNPNYKVNVYAVTKENTIINPSENGDTSTNGIKKILIFSKKGYEIG
-
+```
 
 
 These will be the sequences for the target antigenic protein and used in subsequent functional analysis. Typically, datamining can be used to study and contrast hundreds of sequences for a candidate antigen simultaneously. Three antigens is an adequate number to show variety and selection for a sample workflow. 
@@ -112,8 +114,9 @@ These will be the sequences for the target antigenic protein and used in subsequ
 
 In vaccine design, high antigenicity is important for target recognition. Antigenicity refers to a substance’s ability to be recognized by the immune system and its components like B cell receptors, antibodies and T cell receptors. Put simply, it is a measure of how well a protein or molecule functions as an antigen. 
 
-For this workshop, the antigenicity of the candidate sequences is tested using 3 different online tools VaxiJen v.24,5, VaxiJen v.36-8 and the antigenic.pl tool made by the Immunomedicine Group9. These are alignment free methods of predicting antigenicity and rely on machine learning or other methods to determine immunogenicity for a candidate sequence4-9. Each tool was run with its default settings, and the sequence was set to be bacterial in origin. The results for each sequence are presented in Table 1.
+For this workshop, the antigenicity of the candidate sequences is tested using 3 different online tools VaxiJen v.2<sup>4,5</sup>, VaxiJen v.3<sup>6-8</sup> and the antigenic.pl tool made by the Immunomedicine Group<sup>9</sup>. These are alignment free methods of predicting antigenicity and rely on machine learning or other methods to determine immunogenicity for a candidate sequence<sup>4-9</sup>. Each tool was run with its default settings, and the sequence was set to be bacterial in origin. The results for each sequence are presented in Table 1.
 
+(https://github.com/Fazizzz/Reverse-Vaccine-Design-Workflow/blob/main/Images/Table1.png?raw=true)
 
 
 
