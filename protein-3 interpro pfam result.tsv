@@ -1,0 +1,38 @@
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	Phobius	SIGNAL_PEPTIDE_C_REGION	C-terminal region of a signal peptide.	18	29	-	T	30-06-2025	-	-	-	-
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	MobiDBLite	mobidb-lite	consensus disorder prediction	302	333	-	T	30-06-2025	-	-	-	-
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	FunFam	G3DSA:3.90.182.10:FF:000001	Protective antigen	30	287	0.0	T	30-06-2025	-	-	-	-
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	SignalP_GRAM_POSITIVE	SignalP-TM	SignalP-TM	1	29	-	T	30-06-2025	-	-	-	-
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	Phobius	SIGNAL_PEPTIDE_H_REGION	Hydrophobic region of a signal peptide.	6	17	-	T	30-06-2025	-	-	-	-
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	Gene3D	G3DSA:2.60.40.810	-	634	764	1.6E-68	T	30-06-2025	IPR027441	Protective antigen, domain 4	-	Reactome:R-HSA-5210891
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	Pfam	PF20835	Anthrax protective antigen, immunoglobulin-like domain	623	763	1.7E-69	T	30-06-2025	IPR048853	Anthrax protective antigen, immunoglobulin-like domain	-	Reactome:R-HSA-5210891
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	SMART	SM00758	pa14_novel	44	178	6.8E-35	T	30-06-2025	IPR011658	PA14 domain	-	MetaCyc:PWY-3121|MetaCyc:PWY-5176|MetaCyc:PWY-6002|MetaCyc:PWY-6717|MetaCyc:PWY-6788|MetaCyc:PWY-6902|MetaCyc:PWY-7091|MetaCyc:PWY-7092|MetaCyc:PWY-7822|MetaCyc:PWY-7883|MetaCyc:PWY-7913|Reactome:R-HSA-5210891
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	Pfam	PF03495	Clostridial binary toxin B/anthrax toxin PA Ca-binding domain	205	286	4.2E-33	T	30-06-2025	IPR035088	Protective antigen, Ca-binding domain	-	Reactome:R-HSA-5210891
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	Phobius	SIGNAL_PEPTIDE_N_REGION	N-terminal region of a signal peptide.	1	5	-	T	30-06-2025	-	-	-	-
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	SignalP_EUK	SignalP-noTM	SignalP-noTM	1	21	-	T	30-06-2025	-	-	-	-
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	MobiDBLite	mobidb-lite	consensus disorder prediction	176	214	-	T	30-06-2025	-	-	-	-
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	Gene3D	G3DSA:3.90.182.10	-	30	287	6.7E-102	T	30-06-2025	-	-	-	-
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	MobiDBLite	mobidb-lite	consensus disorder prediction	306	327	-	T	30-06-2025	-	-	-	-
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	Gene3D	G3DSA:3.10.20.110	-	517	633	1.1E-39	T	30-06-2025	-	-	-	-
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	Pfam	PF07691	PA14 domain	45	178	5.1E-30	T	30-06-2025	IPR011658	PA14 domain	-	MetaCyc:PWY-3121|MetaCyc:PWY-5176|MetaCyc:PWY-6002|MetaCyc:PWY-6717|MetaCyc:PWY-6788|MetaCyc:PWY-6902|MetaCyc:PWY-7091|MetaCyc:PWY-7092|MetaCyc:PWY-7822|MetaCyc:PWY-7883|MetaCyc:PWY-7913|Reactome:R-HSA-5210891
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	Pfam	PF17476	Clostridial binary toxin B/anthrax toxin PA domain 3	509	609	5.8E-43	T	30-06-2025	IPR035331	Clostridial binary toxin B/anthrax toxin PA, domain 3	-	Reactome:R-HSA-5210891
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	Gene3D	G3DSA:2.60.120.240	Protective antigen, heptamerisation domain	288	516	1.3E-74	T	30-06-2025	IPR037149	Protective antigen, heptamerisation domain superfamily	GO:0051260(InterPro)	Reactome:R-HSA-5210891
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	SUPERFAMILY	SSF56988	Anthrax protective antigen	44	764	0.0	T	30-06-2025	-	-	-	-
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	Coils	Coil	Coil	24	44	-	T	30-06-2025	-	-	-	-
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	Pfam	PF17475	Clostridial binary toxin B/anthrax toxin PA domain 2	289	506	0.0	T	30-06-2025	IPR027439	Protective antigen, heptamerisation domain	GO:0051260(InterPro)	Reactome:R-HSA-5210891
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	Phobius	NON_CYTOPLASMIC_DOMAIN	Region of a membrane-bound protein predicted to be outside the membrane, in the extracellular region.	30	764	-	T	30-06-2025	-	-	-	-
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	ProSiteProfiles	PS51820	PA14 domain profile.	43	179	19.457972	T	30-06-2025	IPR037524	PA14/GLEYA domain	-	MetaCyc:PWY-3121|MetaCyc:PWY-5176|MetaCyc:PWY-6002|MetaCyc:PWY-6717|MetaCyc:PWY-6788|MetaCyc:PWY-6807|MetaCyc:PWY-6902|MetaCyc:PWY-7091|MetaCyc:PWY-7092|MetaCyc:PWY-7822|MetaCyc:PWY-7883|MetaCyc:PWY-7913|Reactome:R-HSA-5210891
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	FunFam	G3DSA:3.10.20.110:FF:000001	Protective antigen	515	633	5.3E-79	T	30-06-2025	-	-	-	-
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	Phobius	SIGNAL_PEPTIDE	Signal peptide region	1	29	-	T	30-06-2025	-	-	-	-
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	SignalP_EUK	SignalP-noTM	SignalP-noTM	1	21	-	T	30-06-2025	-	-	-	-
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	PRINTS	PR01391	Binary toxin B family signature	39	58	0.0	T	30-06-2025	IPR003896	Bacterial exotoxin B	GO:0005576(InterPro)	Reactome:R-HSA-5210891
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	PRINTS	PR01391	Binary toxin B family signature	91	110	0.0	T	30-06-2025	IPR003896	Bacterial exotoxin B	GO:0005576(InterPro)	Reactome:R-HSA-5210891
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	PRINTS	PR01391	Binary toxin B family signature	132	150	0.0	T	30-06-2025	IPR003896	Bacterial exotoxin B	GO:0005576(InterPro)	Reactome:R-HSA-5210891
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	PRINTS	PR01391	Binary toxin B family signature	206	223	0.0	T	30-06-2025	IPR003896	Bacterial exotoxin B	GO:0005576(InterPro)	Reactome:R-HSA-5210891
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	PRINTS	PR01391	Binary toxin B family signature	244	267	0.0	T	30-06-2025	IPR003896	Bacterial exotoxin B	GO:0005576(InterPro)	Reactome:R-HSA-5210891
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	PRINTS	PR01391	Binary toxin B family signature	270	296	0.0	T	30-06-2025	IPR003896	Bacterial exotoxin B	GO:0005576(InterPro)	Reactome:R-HSA-5210891
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	PRINTS	PR01391	Binary toxin B family signature	390	413	0.0	T	30-06-2025	IPR003896	Bacterial exotoxin B	GO:0005576(InterPro)	Reactome:R-HSA-5210891
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	PRINTS	PR01391	Binary toxin B family signature	422	441	0.0	T	30-06-2025	IPR003896	Bacterial exotoxin B	GO:0005576(InterPro)	Reactome:R-HSA-5210891
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	PRINTS	PR01391	Binary toxin B family signature	447	465	0.0	T	30-06-2025	IPR003896	Bacterial exotoxin B	GO:0005576(InterPro)	Reactome:R-HSA-5210891
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	PRINTS	PR01391	Binary toxin B family signature	467	492	0.0	T	30-06-2025	IPR003896	Bacterial exotoxin B	GO:0005576(InterPro)	Reactome:R-HSA-5210891
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	PRINTS	PR01391	Binary toxin B family signature	503	520	0.0	T	30-06-2025	IPR003896	Bacterial exotoxin B	GO:0005576(InterPro)	Reactome:R-HSA-5210891
+PNS63514.1	6bb3fcf01d538ddf8ce645fd0493e68b	764	PRINTS	PR01391	Binary toxin B family signature	548	573	0.0	T	30-06-2025	IPR003896	Bacterial exotoxin B	GO:0005576(InterPro)	Reactome:R-HSA-5210891

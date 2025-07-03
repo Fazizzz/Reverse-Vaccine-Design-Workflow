@@ -1,0 +1,6 @@
+Group,Start,End,Length,Sequence,Avg_Score,Domain
+16,208,216,9,SNIHEKKGL,-3.307,Domain 1
+3,54,56,3,PSE,-3.326,Domain 1
+45,543,546,4,QGKD,-3.54,Domain 3
+44,535,541,7,EPNGNLQ,-3.586,Domain 3
+60,710,722,13,PSENGDTSTNGIK,-3.767,Domain 4

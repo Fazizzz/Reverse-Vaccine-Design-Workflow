@@ -1,0 +1,7 @@
+2dlabels create epitope1 text "Epitope 1: Red" color red size 12 xpos 0.85 ypos 0.20
+2dlabels create epitope2 text "Epitope 2: Blue" color blue size 12 xpos 0.85 ypos 0.15
+2dlabels create epitope3 text "Epitope 3: Green" color green size 12 xpos 0.85 ypos 0.10
+2dlabels create epitope4 text "Epitope 4: Orange" color orange size 12 xpos 0.85 ypos 0.05
+2dlabels create epitope5 text "Epitope 5: Purple" color purple size 12 xpos 0.85 ypos 0.00
+
+
