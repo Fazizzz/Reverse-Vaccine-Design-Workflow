@@ -116,7 +116,7 @@ In vaccine design, high antigenicity is important for target recognition. Antige
 
 For this workshop, the antigenicity of the candidate sequences is tested using 3 different online tools VaxiJen v.2<sup>4,5</sup>, VaxiJen v.3<sup>6-8</sup> and the antigenic.pl tool made by the Immunomedicine Group<sup>9</sup>. These are alignment free methods of predicting antigenicity and rely on machine learning or other methods to determine immunogenicity for a candidate sequence<sup>4-9</sup>. Each tool was run with its default settings, and the sequence was set to be bacterial in origin. The results for each sequence are presented in Table 1.
 
-(https://github.com/Fazizzz/Reverse-Vaccine-Design-Workflow/blob/main/Images/Table1.png?raw=true)
+![Table1](https://github.com/Fazizzz/Reverse-Vaccine-Design-Workflow/blob/main/Images/Table1.png)
 
 
 
