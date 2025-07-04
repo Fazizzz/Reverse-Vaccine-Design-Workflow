@@ -16,7 +16,7 @@ _______________________________________________________
 
 ## Introduction:
 
-Anthrax is one of the deadliest bioweapons in the world. Anthrax is the colloquial name for the bacterium Bacillus anthracis, which can be weaponized as spores that can be inhaled. The main mechanism of toxicity is the toxin the bacterium produces which can be toxic on its own to eukaryotic cells. The anthrax toxin is comprised of three non-toxic proteins that combine on eukaryotic host cell surfaces to make noncovalent, toxic complexes<sup>1</sup>. These proteins include Lethal Factor (LF), Edema Factor (EF) and Protective Antigen (PA). 
+Anthrax is one of the deadliest bioweapons in the world. Anthrax is the colloquial name for the bacterium *Bacillus anthracis*, which can be weaponized as spores that can be inhaled. The main mechanism of toxicity is the toxin the bacterium produces which can be toxic on its own to eukaryotic cells. The anthrax toxin is comprised of three non-toxic proteins that combine on eukaryotic host cell surfaces to make noncovalent, toxic complexes<sup>1</sup>. These proteins include Lethal Factor (LF), Edema Factor (EF) and Protective Antigen (PA). 
 
 As part of a reverse vaccine engineering workflow, this document will go through and highlight the key the steps and outputs for the design of a hypothetical toxoid vaccine targeting the PA component of the anthrax toxin. The goal of the vaccine would be to design an antigen based of the PA protein in the toxin, to illicit an immune response in the host so that any future exposure would result in the anthrax toxin being neutralized by the bodies natural immune system. PA was selected as the target for a vaccine due to its low lethality on its own and functionality in cell binding which results in subsequent self-assembly into a ring-shaped homo-oligomer pre-channel that allows entry of the LF and EF components of the toxin into the cell cytosol. Leading to death of the host cell<sup>1</sup>. 
 
@@ -328,76 +328,44 @@ The next logical steps in developing a product would require more detailed model
 
 
 ## References:
+1.	Kintzer, A. F., Thoren, K. L., Sterling, H. J., Dong, K. C., Feld, G. K., Tang, I. I., ... & Krantz, B. A. (2009). The protective antigen component of anthrax toxin forms functional octameric complexes. Journal of molecular biology, 392(3), 614-629.
+2.	Liu, S., Moayeri, M., & Leppla, S. H. (2014). Anthrax lethal and edema toxins in anthrax pathogenesis. Trends in microbiology, 22(6), 317-325.
+3.	Sahin, M., Buyuk, F., Baillie, L., Wölfel, R., Kotorashvili, A., Rehn, A., ... & Grass, G. (2018). The identification of novel single nucleotide polymorphisms to assist in mapping the spread of Bacillus anthracis across the Southern Caucasus. Scientific Reports, 8(1), 11254.
+4.	Doytchinova, I. A., & Flower, D. R. (2007). VaxiJen: a server for prediction of protective antigens, tumour antigens and subunit vaccines. BMC bioinformatics, 8, 1-7.
+5.	Doytchinova, I. A., & Flower, D. R. (2007). Identifying candidate subunit vaccines using an alignment-independent method based on principal amino acid properties. Vaccine, 25(5), 856-866.
+6.	Dimitrov, I., Zaharieva, N., & Doytchinova, I. (2020). Bacterial immunogenicity prediction by machine learning methods. Vaccines, 8(4), 709.
+7.	Doneva, N., & Dimitrov, I. (2024). Viral immunogenicity prediction by machine learning methods. International Journal of Molecular Sciences, 25(5), 2949.
+8.	Sotirov, S., & Dimitrov, I. (2024). Application of machine learning algorithms for prediction of tumor t-cell immunogens. Applied Sciences, 14(10), 4034.
+9.	Kolaskar, A. S., & Tongaonkar, P. C. (1990). A semi-empirical method for prediction of antigenic determinants on protein antigens. FEBS letters, 276(1-2), 172-174.
+10.	Saha, S., & Raghava, G. P. S. (2006). AlgPred: prediction of allergenic proteins and mapping of IgE epitopes. Nucleic acids research, 34(suppl_2), W202-W209.
+11.	Nguyen, M. N., Krutz, N. L., Limviphuvadh, V., Lopata, A. L., Gerberick, G. F., & Maurer-Stroh, S. (2022). AllerCatPro 2.0: a web server for predicting protein allergenicity potential. Nucleic Acids Research, 50(W1), W36-W43.
+12.	Dimitrov, I., Bangov, I., Flower, D. R., & Doytchinova, I. (2014). AllerTOP v. 2—a server for in silico prediction of allergens. Journal of molecular modeling, 20, 1-6.
+13.	Gasteiger, E., Hoogland, C., Gattiker, A., Duvaud, S. E., Wilkins, M. R., Appel, R. D., & Bairoch, A. (2005). Protein identification and analysis tools on the ExPASy server. The proteomics protocols handbook, 571-607.
+14.	AA Prop – Protein Physicochemical Properties Prediction Tool. (n.d.). BioGem. Retrieved June 30, 2025, from http://www.biogem.org/tool/aa prop/
+15.	Powell, H. R., Islam, S. A., David, A., & Sternberg, M. J. (2025). Phyre2. 2: A community resource for template-based protein structure prediction. Journal of Molecular Biology, 168960.
+16.	Buchan, D. W., Moffat, L., Lau, A., Kandathil, S. M., & Jones, D. T. (2024). Deep learning for the PSIPRED protein analysis workbench. Nucleic Acids Research, 52(W1), W287-W293.
+17.	Jones, D. T. (1999). Protein secondary structure prediction based on position-specific scoring matrices. Journal of molecular biology, 292(2), 195-202.
+18.	Lobley, A., Sadowski, M. I., & Jones, D. T. (2009). pGenTHREADER and pDomTHREADER: new methods for improved protein fold recognition and superfamily discrimination. Bioinformatics, 25(14), 1761-1767.
+19.	McGuffin, L. J., & Jones, D. T. (2003). Improvement of the GenTHREADER method for genomic fold recognition. Bioinformatics, 19(7), 874-881.
+20.	Nugent, T., & Jones, D. T. (2009). Transmembrane protein topology prediction using support vector machines. BMC bioinformatics, 10, 1-11.
+21.	Paysan-Lafosse, T., Blum, M., Chuguransky, S., Grego, T., Pinto, B. L., Salazar, G. A., ... & Bateman, A. (2023). InterPro in 2022. Nucleic acids research, 51(D1), D418-D427.
+22.	Vita, R., Mahajan, S., Overton, J. A., Dhanda, S. K., Martini, S., Cantrell, J. R., ... & Peters, B. (2019). The Immune Epitope Database (IEDB): 2018 update. Nucleic Acids Research, 47(D1), D339–D343. https://doi.org/10.1093/nar/gky1006
+23.	Jespersen, M. C., Peters, B., Nielsen, M., & Marcatili, P. (2017). BepiPred-2.0: improving sequence-based B-cell epitope prediction using conformational epitopes. Nucleic acids research, 45(W1), W24-W29.
+24.	Waterhouse, A., Bertoni, M., Bienert, S., Studer, G., Tauriello, G., Gumienny, R., ... & Schwede, T. (2018). SWISS-MODEL: homology modelling of protein structures and complexes. Nucleic acids research, 46(W1), W296-W303.
+25.	Altschul, S. F., Madden, T. L., Schäffer, A. A., Zhang, J., Zhang, Z., Miller, W., & Lipman, D. J. (1997). Gapped BLAST and PSI-BLAST: a new generation of protein database search programs. Nucleic acids research, 25(17), 3389-3402.
+26.	Altschul, S. F., Wootton, J. C., Gertz, E. M., Agarwala, R., Morgulis, A., Schäffer, A. A., & Yu, Y. K. (2005). Protein database searches using compositionally adjusted substitution matrices. The FEBS journal, 272(20), 5101-5109.
+27.	Petri, T., Berchtold, E., Zimmer, R., & Friedel, C. C. (2012). Detection and correction of probe-level artefacts on microarrays. BMC bioinformatics, 13, 1-12.
+28.	Reynisson, B., Alvarez, B., Paul, S., Peters, B., & Nielsen, M. (2020). NetMHCpan-4.1 and NetMHCIIpan-4.0: improved predictions of MHC antigen presentation by concurrent motif deconvolution and integration of MS MHC eluted ligand data. Nucleic acids research, 48(W1), W449-W454.
+29.	Paul, S., Sidney, J., Sette, A., & Peters, B. (2016). TepiTool: a pipeline for computational prediction of T cell epitope candidates. Current protocols in immunology, 114(1), 18-19.
+30.	Dhanda, S. K., Karosiene, E., Edwards, L., Grifoni, A., Paul, S., Andreatta, M., ... & Sette, A. (2018). Predicting HLA CD4 immunogenicity in human populations. Frontiers in Immunology, 9, 1369.
+31.	Ponomarenko, J., Bui, H. H., Li, W., Fusseder, N., Bourne, P. E., Sette, A., & Peters, B. (2008). ElliPro: a new structure-based tool for the prediction of antibody epitopes. BMC bioinformatics, 9, 1-8.
+32.	Meng, E. C., Goddard, T. D., Pettersen, E. F., Couch, G. S., Pearson, Z. J., Morris, J. H., & Ferrin, T. E. (2023). UCSF ChimeraX: Tools for structure building and analysis. Protein Science, 32(11), e4792.
+33.	Bui, H. H., Sidney, J., Li, W., Fusseder, N., & Sette, A. (2007). Development of an epitope conservancy analysis tool to facilitate the design of epitope-based diagnostics and vaccines. BMC bioinformatics, 8, 1-6.
+34.	Committee to Assess the Safety, & Efficacy of the Anthrax Vaccine. (2002). The Anthrax Vaccine: Is It Safe? Does It Work?. National Academies Press.
+35.	Wang, J. Y., & Roehrl, M. H. (2005). Anthrax vaccine design: strategies to achieve comprehensive protection against spore, bacillus, and toxin. Medical Immunology, 4, 1-8.
 
-Kintzer, A. F., Thoren, K. L., Sterling, H. J., Dong, K. C., Feld, G. K., Tang, I. I., ... & Krantz, B. A. (2009). The protective antigen component of anthrax toxin forms functional octameric complexes. Journal of molecular biology, 392(3), 614-629.
 
-Liu, S., Moayeri, M., & Leppla, S. H. (2014). Anthrax lethal and edema toxins in anthrax pathogenesis. Trends in microbiology, 22(6), 317-325.
 
-Sahin, M., Buyuk, F., Baillie, L., Wölfel, R., Kotorashvili, A., Rehn, A., ... & Grass, G. (2018). The identification of novel single nucleotide polymorphisms to assist in mapping the spread of Bacillus anthracis across the Southern Caucasus. Scientific Reports, 8(1), 11254.
-
-Doytchinova, I. A., & Flower, D. R. (2007). VaxiJen: a server for prediction of protective antigens, tumour antigens and subunit vaccines. BMC bioinformatics, 8, 1-7.
-
-Doytchinova, I. A., & Flower, D. R. (2007). Identifying candidate subunit vaccines using an alignment-independent method based on principal amino acid properties. Vaccine, 25(5), 856-866.
-
-Dimitrov, I., Zaharieva, N., & Doytchinova, I. (2020). Bacterial immunogenicity prediction by machine learning methods. Vaccines, 8(4), 709.
-
-Doneva, N., & Dimitrov, I. (2024). Viral immunogenicity prediction by machine learning methods. International Journal of Molecular Sciences, 25(5), 2949.
-
-Sotirov, S., & Dimitrov, I. (2024). Application of machine learning algorithms for prediction of tumor t-cell immunogens. Applied Sciences, 14(10), 4034.
-
-Kolaskar, A. S., & Tongaonkar, P. C. (1990). A semi-empirical method for prediction of antigenic determinants on protein antigens. FEBS letters, 276(1-2), 172-174.
-
-Saha, S., & Raghava, G. P. S. (2006). AlgPred: prediction of allergenic proteins and mapping of IgE epitopes. Nucleic acids research, 34(suppl\_2), W202-W209.
-
-Nguyen, M. N., Krutz, N. L., Limviphuvadh, V., Lopata, A. L., Gerberick, G. F., & Maurer-Stroh, S. (2022). AllerCatPro 2.0: a web server for predicting protein allergenicity potential. Nucleic Acids Research, 50(W1), W36-W43.
-
-Dimitrov, I., Bangov, I., Flower, D. R., & Doytchinova, I. (2014). AllerTOP v. 2—a server for in silico prediction of allergens. Journal of molecular modeling, 20, 1-6.
-
-Gasteiger, E., Hoogland, C., Gattiker, A., Duvaud, S. E., Wilkins, M. R., Appel, R. D., & Bairoch, A. (2005). Protein identification and analysis tools on the ExPASy server. The proteomics protocols handbook, 571-607.
-
-AAProp – Protein Physicochemical Properties Prediction Tool. (n.d.). BioGem. Retrieved June 30, 2025, from 
-
-Powell, H. R., Islam, S. A., David, A., & Sternberg, M. J. (2025). Phyre2. 2: A community resource for template-based protein structure prediction. Journal of Molecular Biology, 168960.
-
-Buchan, D. W., Moffat, L., Lau, A., Kandathil, S. M., & Jones, D. T. (2024). Deep learning for the PSIPRED protein analysis workbench. Nucleic Acids Research, 52(W1), W287-W293.
-
-Jones, D. T. (1999). Protein secondary structure prediction based on position-specific scoring matrices. Journal of molecular biology, 292(2), 195-202.
-
-Lobley, A., Sadowski, M. I., & Jones, D. T. (2009). pGenTHREADER and pDomTHREADER: new methods for improved protein fold recognition and superfamily discrimination. Bioinformatics, 25(14), 1761-1767.
-
-McGuffin, L. J., & Jones, D. T. (2003). Improvement of the GenTHREADER method for genomic fold recognition. Bioinformatics, 19(7), 874-881.
-
-Nugent, T., & Jones, D. T. (2009). Transmembrane protein topology prediction using support vector machines. BMC bioinformatics, 10, 1-11.
-
-Paysan-Lafosse, T., Blum, M., Chuguransky, S., Grego, T., Pinto, B. L., Salazar, G. A., ... & Bateman, A. (2023). InterPro in 2022. Nucleic acids research, 51(D1), D418-D427.
-
-Vita, R., Mahajan, S., Overton, J. A., Dhanda, S. K., Martini, S., Cantrell, J. R., ... & Peters, B. (2019). The Immune Epitope Database (IEDB): 2018 update. Nucleic Acids Research, 47(D1), D339–D343. 
-
-Jespersen, M. C., Peters, B., Nielsen, M., & Marcatili, P. (2017). BepiPred-2.0: improving sequence-based B-cell epitope prediction using conformational epitopes. Nucleic acids research, 45(W1), W24-W29.
-
-Waterhouse, A., Bertoni, M., Bienert, S., Studer, G., Tauriello, G., Gumienny, R., ... & Schwede, T. (2018). SWISS-MODEL: homology modelling of protein structures and complexes. Nucleic acids research, 46(W1), W296-W303.
-
-Altschul, S. F., Madden, T. L., Schäffer, A. A., Zhang, J., Zhang, Z., Miller, W., & Lipman, D. J. (1997). Gapped BLAST and PSI-BLAST: a new generation of protein database search programs. Nucleic acids research, 25(17), 3389-3402.
-
-Altschul, S. F., Wootton, J. C., Gertz, E. M., Agarwala, R., Morgulis, A., Schäffer, A. A., & Yu, Y. K. (2005). Protein database searches using compositionally adjusted substitution matrices. The FEBS journal, 272(20), 5101-5109.
-
-Petri, T., Berchtold, E., Zimmer, R., & Friedel, C. C. (2012). Detection and correction of probe-level artefacts on microarrays. BMC bioinformatics, 13, 1-12.
-
-Reynisson, B., Alvarez, B., Paul, S., Peters, B., & Nielsen, M. (2020). NetMHCpan-4.1 and NetMHCIIpan-4.0: improved predictions of MHC antigen presentation by concurrent motif deconvolution and integration of MS MHC eluted ligand data. Nucleic acids research, 48(W1), W449-W454.
-
-Paul, S., Sidney, J., Sette, A., & Peters, B. (2016). TepiTool: a pipeline for computational prediction of T cell epitope candidates. Current protocols in immunology, 114(1), 18-19.
-
-Dhanda, S. K., Karosiene, E., Edwards, L., Grifoni, A., Paul, S., Andreatta, M., ... & Sette, A. (2018). Predicting HLA CD4 immunogenicity in human populations. Frontiers in Immunology, 9, 1369.
-
-Ponomarenko, J., Bui, H. H., Li, W., Fusseder, N., Bourne, P. E., Sette, A., & Peters, B. (2008). ElliPro: a new structure-based tool for the prediction of antibody epitopes. BMC bioinformatics, 9, 1-8.
-
-Meng, E. C., Goddard, T. D., Pettersen, E. F., Couch, G. S., Pearson, Z. J., Morris, J. H., & Ferrin, T. E. (2023). UCSF ChimeraX: Tools for structure building and analysis. Protein Science, 32(11), e4792.
-
-Bui, H. H., Sidney, J., Li, W., Fusseder, N., & Sette, A. (2007). Development of an epitope conservancy analysis tool to facilitate the design of epitope-based diagnostics and vaccines. BMC bioinformatics, 8, 1-6.
-
-Committee to Assess the Safety, & Efficacy of the Anthrax Vaccine. (2002). The Anthrax Vaccine: Is It Safe? Does It Work?. National Academies Press.
-
-Wang, J. Y., & Roehrl, M. H. (2005). Anthrax vaccine design: strategies to achieve comprehensive protection against spore, bacillus, and toxin. Medical Immunology, 4, 1-8.
 
 
 
