@@ -8,17 +8,21 @@ _______________________________________________________
 - [Data Retrieval and Sequence Availability](#data-retrieval-and-sequence-availability)
 - [Functional Analysis of Antigenic Proteins](#functional-analysis-of-antigenic-proteins)
 - [Analysis of Secondary and Tertiary Structures of Proteins](#analysis-of-secondary-and-tertiary-structures-of-proteins)
-- [Analysis and Prediction of Epitopes Antigen Interactions](#analysis-and-prediction-of-epitopes-antigen-interactions)
+- [Analysis and Prediction of Epitope Antigen Interactions](#analysis-and-prediction-of-epitope-antigen-interactions)
 - [Analysis of Population Coverage of Peptide Relevant Alleles](#analysis-of-population-coverage-of-peptide-relevant-alleles)
 - [Conclusion](#conclusion)
 - [References](#references)
-- [Appendix](#appendix) 
+- [Appendix](#appendix)
+
+  _______________________________________________________
 
 ## Introduction:
 
 Anthrax is one of the deadliest bioweapons in the world. Anthrax is the colloquial name for the bacterium *Bacillus anthracis*, which can be weaponized as spores that can be inhaled. The main mechanism of toxicity is the toxin the bacterium produces which can be toxic on its own to eukaryotic cells. The anthrax toxin is comprised of three non-toxic proteins that combine on eukaryotic host cell surfaces to make noncovalent, toxic complexes<sup>1</sup>. These proteins include Lethal Factor (LF), Edema Factor (EF) and Protective Antigen (PA). 
 
 As part of a reverse vaccine engineering workflow, this document will go through and highlight the key the steps and outputs for the design of a hypothetical toxoid vaccine targeting the PA component of the anthrax toxin. The goal of the vaccine would be to design an antigen based of the PA protein in the toxin, to illicit an immune response in the host so that any future exposure would result in the anthrax toxin being neutralized by the bodies natural immune system. PA was selected as the target for a vaccine due to its low lethality on its own and functionality in cell binding which results in subsequent self-assembly into a ring-shaped homo-oligomer pre-channel that allows entry of the LF and EF components of the toxin into the cell cytosol. Leading to death of the host cell<sup>1</sup>. 
+
+  _______________________________________________________
 
 ## Data Retrieval and Sequence Availability:
 
@@ -108,6 +112,8 @@ GKTFIDFKKYNDKLPLYISNPNYKVNVYAVTKENTIINPSENGDTSTNGIKKILIFSKKGYEIG
 
 These will be the sequences for the target antigenic protein and used in subsequent functional analysis. Typically, datamining can be used to study and contrast hundreds of sequences for a candidate antigen simultaneously. Three antigens is an adequate number to show variety and selection for a sample workflow. 
 
+  _______________________________________________________
+
 ## Functional Analysis of Antigenic Proteins:
 
 #### 1) Prediction of antigenicity:
@@ -116,9 +122,10 @@ In vaccine design, high antigenicity is important for target recognition. Antige
 
 For this workshop, the antigenicity of the candidate sequences is tested using 3 different online tools VaxiJen v.2<sup>4,5</sup>, VaxiJen v.3<sup>6-8</sup> and the antigenic.pl tool made by the Immunomedicine Group<sup>9</sup>. These are alignment free methods of predicting antigenicity and rely on machine learning or other methods to determine immunogenicity for a candidate sequence<sup>4-9</sup>. Each tool was run with its default settings, and the sequence was set to be bacterial in origin. The results for each sequence are presented in Table 1.
 
+
+*Table 1: Table of antigenicity predictions for candidate proteins using three different tools. Protein 1 has higher scores across predictions but protein 3 has the most determinants*
+
 ![Table1](https://github.com/Fazizzz/Reverse-Vaccine-Design-Workflow/blob/main/Images/Table1.png)
-
-
 
 
 From the results in Table 1, it can be observed that all three of the selected candidates are probable candidates for vaccine antigens. Notably, Protein 1 has the higher score across metrics but protein 3, which is the wild type, has more antigenic determinants. Figures for antigenic scores by protein sequence numbers are presented in the appendix (Appendix Figures 1-3) and data tables from the outputs are included in supplementary materials.
@@ -131,8 +138,10 @@ To predict allergenicity, several tools exist and it’s best to use more than o
 
 Notably, all three candidates were not considered allergens by AllerCatPro 2.0<sup>11</sup> and AllerTOP v. 2<sup>12</sup>. Two out of three methods used to predict allergenicity did not consider the candidate PA protein sequences as allergens. Scores for AlgPred10 (using SVM module based on amino acid composition) predictions are provided in the appendix (Appendix Table 1). The scores for the other two methods are included in Table 2.
 
-Table 2: Table of allergenicity predictions for candidate proteins using two different tools. All 3 candidates pass and are marked as non-allergens.
 
+*Table 2: Table of allergenicity predictions for candidate proteins using two different tools. All three candidates pass and are marked as non-allergens.*
+
+![Table2](https://github.com/Fazizzz/Reverse-Vaccine-Design-Workflow/blob/main/Images/Table2.png?raw=true)
 
 
 Two of three methods utilized in this analysis indicate that the candidate proteins are non-allergens. While their peptide sequences can later be evaluated for toxicity on their own and modified during manufacturing, this is enough evidence to proceed with all three of the vaccine candidates to the next step in the workflow.
@@ -146,82 +155,86 @@ It is important to note that like much of the analysis up till this point in the
 All three candidate antigens were analyzed using ProtParam<sup>13</sup> and AA-Prop<sup>14</sup> with the results indicating that they form stable products with half-lives of around 30hrs according to predictions. This means they are good candidates for the vaccine design. Additionally, the tools have provided key metrics such as light absorption, extinction rates and molecular weight which can later be used when purifying and isolating the products during the vaccine manufacturing process. The key metrics from this analysis are presented in Table 3 and additional metrics and hydrophobicity plots are included in supplementary materials.
 
 
+*Table 3: Summary table of key physiochemical properties of candidate proteins. All three are stable molecules with good half-lives.*
 
-### Analysis of Secondary and Tertiary Structures of Proteins:
+![Table3](https://github.com/Fazizzz/Reverse-Vaccine-Design-Workflow/blob/main/Images/Table3.png?raw=true)
+
+
+  _______________________________________________________
+
+
+## Analysis of Secondary and Tertiary Structures of Proteins:
 
 Protein structures have levels, and the chain of amino acids is only the primary structure. The candidate antigens need to be evaluated based on their secondary and tertiary structures. The conformation of the proteins and their folding is what imparts functionality to the final 3D structure, and this is important in determining if an antigen will have meaningful interactions with the immune system when used as a vaccine. 
 
 Key metrics at this stage of the design process are the number of α-helixes, β-strands, disordered regions, functional domains and solvent access. We already know from the previous analysis that the three proteins are stable. However, the selection of antigens can be narrowed down at this stage based off the analysis of secondary and tertiary structures using Phyre2<sup>15</sup>, and the prediction of folding and disordered regions using PSIPRED<sup>16-20</sup>. The summary of these results is presented in Table 4.
 
-Table 4: Summary from analysis of secondary and tertiary structures of candidate antigen proteins. Protein 1 has the highest number of predicted domains combined with the lowest predicted percentage of disordered regions by Phyre2<sup>15</sup>.
 
+*Table 4: Summary from analysis of secondary and tertiary structures of candidate antigen proteins. Protein 1 has the highest number of predicted domains combined with the lowest predicted percentage of disordered regions by Phyre2<sup>15</sup>.*
+
+![Table4](https://github.com/Fazizzz/Reverse-Vaccine-Design-Workflow/blob/main/Images/Table4.png?raw=true)
 
 
 Using alignments to pfam via the InterPro<sup>21</sup> server, the sequences can be mapped to references to identify the functional domains present in the antigen candidates. It is known from literature that the anthrax PA protein has 4 domains that have been experimentally studied and observed<sup>1</sup>. Only two of the candidate molecules were found to have coverage across two domains via InterPro<sup>21</sup>, while all three showed the structural presence of all four via the Phyre2<sup>15</sup> predicted models. 
 
 The 4 known domains include Domain 1: Activation domain (furin site, Ca²⁺ binding), Domain 2: Pore-forming/oligomerization, Domain 3: Connector (structural hinge) and Domain 4: Receptor-binding (Ig-like) domain. The Ig-like domain makes, Domain 4 a desirable region for a vaccine candidate and only protein 1 was confirmed by pfam alignment to have that domain in its sequence. Ultimately, while all three proteins are predicted to contain the full PA structure, Protein 1 is the most comprehensively annotated, has lower disorder, and clearer domain resolution, particularly for Domain 4, the critical receptor-binding domain. These characteristics and its reduced likelihood of being allergenic and higher antigenicity, make it the most promising candidate for epitope mapping and vaccine design. 
 
-From this analysis we can select Protein 1 as the candidate to move forward in the workflow. All InterPro21 and PSIPRED<sup>16-20</sup> results alongside predicted pdb models from the Phyre2<sup>15</sup> analysis are provided as supplementary materials and a summary of domain structures and InterPro<sup>21</sup> mapping to pfam in protein 1 is presented as a cartoon in Figure 1.
+From this analysis we can select Protein 1 as the candidate to move forward in the workflow. All InterPro<sup>21</sup> and PSIPRED<sup>16-20</sup> results alongside predicted pdb models from the Phyre2<sup>15</sup> analysis are provided as supplementary materials and a summary of domain structures and InterPro<sup>21</sup> mapping to pfam in protein 1 is presented as a cartoon in Figure 1.
 
 
+![Figure1](https://github.com/Fazizzz/Reverse-Vaccine-Design-Workflow/blob/main/Images/Figure1.png?raw=true)
 
-## Analysis and Prediction of Epitopes Antigen Interactions:
+*Figure 1: Summary cartoon showing domain structures and mapping for anthrax PA protein, protein 1, structure prediction via Phyre2<sup>15</sup> and InterPro Annotation<sup>21</sup>. Protein 1 (WP_338259392.1) has the key domain desirable for a vaccine candidate, the Ig-like domain and structurally contains the other domains based off the predicted structure even if it may not be annotated by alignment.*
+
+
+  _______________________________________________________
+
+
+## Analysis and Prediction of Epitope-Antigen Interactions:
 
 The next step in the vaccine design process is to model and predict the epitopes on the candidate antigen. Epitopes are the key binding regions on the antigen molecule that will interact with the host immune system. Peptide sequences in the case of proteins. There are several tools to do this as there are multiple cell types to consider with their own unique epitopes on the target antigen. From the previous analysis we know Protein 1 is an ideal candidate with good stability and antigenic properties, so it can be selected for epitope prediction in the vaccine design process. 
 
 For a toxoid vaccine like the one in consideration here which is derived from the toxin of a bacteria, the key epitopes to be modeled are B-cell epitopes for continuous (amino acid chain) and conformational or discontinuous (3D structure) forms of the antigen. With B-cells being responsible for producing the antibodies against the toxin. Secondly, there are T-cell epitopes which are important to predict for the hosts long term specific immune responses. T-cell epitope modeling also involves modeling MHC class 2 epitopes in the process as the antigen will be engulfed by Antigen Presenting Cells (APCs) that will process the antigen, signal the T-cell and present the antigens to the CD4+ T-cells. 
 
-#### Prediction of continuous or sequential B-cell epitopes:
+#### 1) Prediction of continuous or sequential B-cell epitopes:
 
 To predict the continuous or sequential B-cell epitopes, the sequence of Protein 1 was submitted to two different servers for prediction and scoring, and the aggregate of both predictions are presented in Figure 2. For the prediction of epitopes, the two methods used were The Immune Epitope Database (IEDB)<sup>22</sup> and BepiPred-2.0<sup>23</sup>. Both methods have similar outputs with BepiPred-2.0<sup>23</sup> providing additional metrics and information about the residues in the protein structure.
 
 
+![Figure2](https://github.com/Fazizzz/Reverse-Vaccine-Design-Workflow/blob/main/Images/Figure2.png?raw=true)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*Figure 2: Figure showing combined scores from IEDB<sup>22</sup> and BepiPred-2.0<sup>23</sup> overlayed on the same figure. The yellow shaded region indicates, areas of high overlap above thresholds (IEDB Score > 0 and BepiPred-2.0 Epitope Probability > 0.5). These are the sections of the linear antigen most likely to have epitopes. Regions bellow 0 are unlikely to have any epitopes.*
 
 
 Both methods showed high concordance and indicated the presence of epitopes in the linear structure of the antigen. The analysis of the results from both tools and the visual analysis was conducted in R and all scripts from this analysis are available in the supplementary materials. Additionally, the epitope prediction scores from both methods were averaged to identify the top five epitopes, their sequences were preserved for downstream analysis, and they were mapped to the four predefined domains of the PA protein to see where the key binding incidents would take place based on the predictions and domain boundaries. The results from this analysis are presented in Table 5.
 
-#### Prediction of conformational or discontinuous B-cell epitopes:
 
-To determine conformational epitopes, it is important to first have an accurate 3D model for the structure of an antigen protein. In previous steps, Phyre2<sup>15</sup> provided a 3D model, and that can be used for this analysis. However, to confirm that model’s validity, SWISS-MODEL<sup>24</sup> was also used to generate a 3D structure for Protein 1 using its sequence. Notably, the model generated by SWISS-MODEL was different from the one predicted by Phyre2<sup>15</sup> (Phyre 2: c3hvdB 99% identity/100% Confidence, SWISS-Model24: 1t6b 100% identity/ 99.85% Coverage). We need an accurate 3D representation to be able to identify the outer structures of a protein and then select the peptides on the outer regions which are most likely to bind to immune cells.
+*Table 5: Table showing Averaged scores, sequences and mapped domains for the top 5 predicted epitopes from the analysis performed using IEDB<sup>22</sup> and BepoPred-2.0<sup>23</sup>. Epitopes are also ranked by their top average score across both tools.*
+
+![Table 5](https://github.com/Fazizzz/Reverse-Vaccine-Design-Workflow/blob/main/Images/Table%205.png?raw=true)
+
+
+#### 2) Prediction of conformational or discontinuous B-cell epitopes:
+
+To determine conformational epitopes, it is important to first have an accurate 3D model for the structure of an antigen protein. In previous steps, Phyre2<sup>15</sup> provided a 3D model, and that can be used for this analysis. However, to confirm that model’s validity, SWISS-MODEL<sup>24</sup> was also used to generate a 3D structure for Protein 1 using its sequence. Notably, the model generated by SWISS-MODEL was different from the one predicted by Phyre2<sup>15</sup> (Phyre 2: c3hvdB 99% identity/100% Confidence, SWISS-Model: 1t6b 100% identity/ 99.85% Coverage). We need an accurate 3D representation to be able to identify the outer structures of a protein and then select the peptides on the outer regions which are most likely to bind to immune cells.
 
 To resolve this conflict and choose the best 3D structure, the models were verified via BLASTp<sup>25,26</sup> alignment to the PDB database. The top hit was PDB: 1T6B\_X with 100% identity, indicating that the SWISS-model was more accurate because it matched accurately and completely to the full sequence in the reference database. The results from BLASTp<sup>25,26</sup> and PDB files for both models are included in supplementary materials.
 
 To predict epitopes on the 3D structure, DiscoTope<sup>27</sup> hosted on the IEDB server was utilized. The predictions were plotted by residue in Figure 3 and the epitopes were filtered using R to identify the top five to match the previous analysis for linear epitopes and is summarized in Table 6. The scripts used to generate the figures and analysis along with the raw data output from DiscoTope<sup>27</sup> are included in supplementary materials. 
 
-Figure 3: Figure showing DiscoTope<sup>27</sup> Score by Residue. The green shaded portions indicate the presence of conformational epitopes based on DiscoTope score threshold of -7.7. There are several predicted epitopes. 
 
-Table 6: Table showing Average score, sequences and mapped domains for the top five predicted epitopes from the analysis performed using DiscoTope<sup>27</sup>. Epitopes are ranked based on Score.
+![Figure3](https://github.com/Fazizzz/Reverse-Vaccine-Design-Workflow/blob/main/Images/Figure3.png?raw=true)
 
+*Figure 3: Figure showing DiscoTope<sup>27</sup> Score by Residue. The green shaded portions indicate the presence of conformational epitopes based on DiscoTope score threshold of -7.7. There are several predicted epitopes.*
+
+
+*Table 6: Table showing Average score, sequences and mapped domains for the top five predicted epitopes from the analysis performed using DiscoTope<sup>27</sup>. Epitopes are ranked based on Score.*
+![Table 6](https://github.com/Fazizzz/Reverse-Vaccine-Design-Workflow/blob/main/Images/Table6.png?raw=true)
 
 
 There are ample conformational epitopes in the candidate protein and notably, the top five epitopes include an epitope that maps to Domain 4 which is known from structural analysis to be a binding domain for an antibody like peptide. A positive result for this analysis for a vaccine candidate. 
 
-#### Prediction of T-cell and MHC Class II peptide binding:
+#### 3) Prediction of T-cell and MHC Class II peptide binding:
 
 When considering binding and immune responses for T-cells as in the case of a toxoid vaccine, it is important to keep in mind that CD4+ T-cells interact with MHC class II complexes on APCs. To model T-cell immune responses it is first necessary to identify peptide interactions between the antigen and MHC class II complexes. Class I complexes are not relevant in the case of a toxoid vaccine because they are responsible for calling CD8+ killer T-cells to infected or cancerous cells to trigger cell death. The toxin antigen is more likely to be engulfed by an APC, processed and then complexed with MHC class II molecules for generating a specific immune response. 
 
@@ -245,7 +258,7 @@ Figure 4: Heatmap of top five consensus MHC class II peptides based on IEDB28 an
 
 The presence of highly promiscuous peptides that bind multiple HLA alleles across platform predictions with low IC50 and percentile rank scores, indicating strong binding predictions, show promising results for Protein 1 being a potential vaccine candidate. Successful binding to MHC Class II molecules also gives us a good indication of T-cell immune response as the receptors on T-cells will most likely respond to antigen peptides presented by the MHC class II molecules if presented in APCs. 
 
-#### Prediction of CD4+ T-cell immunogenicity:
+#### 4) Prediction of CD4+ T-cell immunogenicity:
 
 Using IEDBs CD4 T-cell immunogenicity prediction tool30, it is possible to identify the immunogenicity of our antigen for at least 7 of the most common HLA alleles in the world. Using 7 alleles, the tool is able to create an aggregate immunogenicity score for 15mer peptide sequences in the antigen. Using this tool, it is possible to confirm that CD4 cells will interact with the target antigen if presented by an MHC II complex or potentially even in the humoral immune response. All identified peptides and their scores are included in supplementary materials, but the top five peptides identified in the antigen and their immunogenicity scores are presented in Table 8.
 
@@ -253,7 +266,7 @@ Using IEDBs CD4 T-cell immunogenicity prediction tool30, it is possible to ident
 
 The high CD4 + T-Cell immunogenicity scores are promising and validate our analysis thus far that Protein 1 can function as a good vaccine candidate. With ample evidence that the candidate vaccine antigen will illicit an immune response and most likely have meaningful interactions with almost every category of immune cell necessary in a toxoid vaccine response mechanism, the workflow can proceed to modeling the epitopes on the protein structure and visual analysis.
 
-#### Modeling of predicted epitopes:
+#### 5) Modeling of predicted epitopes:
 
 Once a comprehensive analysis of epitopes has been conducted for the candidate antigen. The next step is to model the predicted epitopes on to the surface of the 3D structure of the molecule. This will allow visualization of where the antibodies will bind to the antigen in the vaccine antigen. From the previous steps, a highly reliable 3D structure was already generated for the antigen using SWISS-MODEL<sup>24</sup>. In this case, the antigen protein was determined to have very high similarity to the PDB protein 1t6b. Using this information, the tool ElliPro<sup>31</sup> can predict where in the molecule antibodies are most likely to bind based off the antigens structure.
 
@@ -277,7 +290,9 @@ With the modeling completed, the epitopes on the antigen candidate can be highli
 
 For the purposes of this workflow, however, it is feasible to proceed to the next stage which is population coverage analysis. Manufacturing considerations, further toxicity analysis and protein modifications are key steps in drug design but exceed the scope of this workflow that focuses on validating an antigen candidate. 
 
-### Analysis of Population Coverage of Peptide Relevant Alleles:
+  _______________________________________________________
+
+## Analysis of Population Coverage of Peptide Relevant Alleles:
 
 In one of the previous analyses when predicting MHC Class II epitopes, the subject of alleles was touched upon. When it comes to global populations, alleles are distributed unevenly across the world and hence immune responses tend to be regulated by the genetic makeup of any given population. During the analysis of MHC II complexes using TepiTool<sup>29</sup>, part of the output included peptide sequences from the antigen being identified as epitopes and their mapping to known allele variants of MHC class II alleles. This information can be used with the IEDB Population Coverage Calculation<sup>33</sup> tool to determine if the epitopes in the candidate antigen will have recognition or coverage in a population. This is a way to determine if the immune response will be elicited equally in different populations. A key step in vaccine design
 
@@ -313,6 +328,7 @@ Overall, the results indicate that Protein 1 is rich in epitopes that can illici
 ### 
 
 ### 
+  _______________________________________________________
 
 ## Conclusion:
 
@@ -325,6 +341,8 @@ Through the process of reverse vaccine design, candidate antigen sequences were 
 While there are hundreds and thousands of other similar structures to consider as candidates for an anthrax toxin vaccine, they can be compared against the sequence provided in this workflow as a baseline. The modeled 3D structure can be used to study the docking of antibodies to a potential vaccine. The structure identified can serve as a template for modification and development of a synthetic vaccine as well. Notably, no toxicity analysis was done on the high-quality epitopes identified here. Analysis of those regions for toxic reactions in the body would be necessary to ensure a safety profile for any medical usage. 
 
 The next logical steps in developing a product would require more detailed modeling and further modifications necessary for manufacturing and synthesis. Steps that exceed the scope of this project. The materials and analysis generated as part of this project however are necessary for any future design aspects and represent a key part of the reverse vaccine design pipeline. Hopefully this analysis reduces barriers in any future vaccine design for anthrax toxin and is a resource for those looking to learn the process for reverse vaccine design.
+
+  _______________________________________________________
 
 
 ## References:
@@ -367,8 +385,7 @@ The next logical steps in developing a product would require more detailed model
 
 
 
-
-
+  _______________________________________________________
 
 
 ## Appendix:
