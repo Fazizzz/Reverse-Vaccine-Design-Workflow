@@ -127,9 +127,9 @@ From the results in Table 1, it can be observed that all three of the selected c
 
 Allergenicity refers to the ability of a protein or molecule to trigger the body’s immune system to produce IgE antibodies and cause hypersensitivity reactions, such as rashes, asthma, or even anaphylaxis. In simple terms it is a measure of an antigens ability to cause an allergic reaction. Ideally, a vaccine candidate should not elicit any allergic response from the host and should not be considered an allergen. The immune response should be directed at producing targeted antibodies and recruiting the right kind of T and B-cells to remove the pathogen from the host. 
 
-To predict allergenicity, several tools exist and it’s best to use more than one to ensure that the vaccine does not cause significant harm to the recipient. In this workflow AlgPred10 was one of the tools used, and it flagged all three of the candidates as allergens. This would typically be a cause for concern that requires deeper analysis and can potentially disqualify the antigen candidates for a vaccine. However, since this was a theoretical workflow with only three candidates, and the other tools used did not agree with AlgPred10 in its assessment, the result can be ignored, and the workflow can continue.
+To predict allergenicity, several tools exist and it’s best to use more than one to ensure that the vaccine does not cause significant harm to the recipient. In this workflow AlgPred<sup>10</sup> was one of the tools used, and it flagged all three of the candidates as allergens. This would typically be a cause for concern that requires deeper analysis and can potentially disqualify the antigen candidates for a vaccine. However, since this was a theoretical workflow with only three candidates, and the other tools used did not agree with AlgPred<sup>10</sup> in its assessment, the result can be ignored, and the workflow can continue.
 
-Notably, all three candidates were not considered allergens by AllerCatPro 2.0 11 and AllerTOP v. 2 12. Two out of three methods used to predict allergenicity did not consider the candidate PA protein sequences as allergens. Scores for AlgPred10 (using SVM module based on amino acid composition) predictions are provided in the appendix (Appendix Table 1). The scores for the other two methods are included in Table 2.
+Notably, all three candidates were not considered allergens by AllerCatPro 2.0<sup>11</sup> and AllerTOP v. 2<sup>12</sup>. Two out of three methods used to predict allergenicity did not consider the candidate PA protein sequences as allergens. Scores for AlgPred10 (using SVM module based on amino acid composition) predictions are provided in the appendix (Appendix Table 1). The scores for the other two methods are included in Table 2.
 
 Table 2: Table of allergenicity predictions for candidate proteins using two different tools. All 3 candidates pass and are marked as non-allergens.
 
@@ -143,25 +143,25 @@ Physio-chemical proteins are an important factor to consider in antigen design. 
 
 It is important to note that like much of the analysis up till this point in the workflow, the iso-electric point predictions at this stage are theoretical because it is based on the sequences of amino acids, which includes residues that may be inaccessible when the protein is folded into its 3D structure. The folding of the protein will impact which residues are facing the surface of the protein and change the final properties the protein molecule will practically display. Further analysis will be required for the 3D structures of the antigen proteins. 
 
-All three candidate antigens were analyzed using ProtParam13 and AA-Prop14 with the results indicating that they form stable products with half-lives of around 30hrs according to predictions. This means they are good candidates for the vaccine design. Additionally, the tools have provided key metrics such as light absorption, extinction rates and molecular weight which can later be used when purifying and isolating the products during the vaccine manufacturing process. The key metrics from this analysis are presented in Table 3 and additional metrics and hydrophobicity plots are included in supplementary materials.
+All three candidate antigens were analyzed using ProtParam<sup>13</sup> and AA-Prop<sup>14</sup> with the results indicating that they form stable products with half-lives of around 30hrs according to predictions. This means they are good candidates for the vaccine design. Additionally, the tools have provided key metrics such as light absorption, extinction rates and molecular weight which can later be used when purifying and isolating the products during the vaccine manufacturing process. The key metrics from this analysis are presented in Table 3 and additional metrics and hydrophobicity plots are included in supplementary materials.
 
 
 
 ### Analysis of Secondary and Tertiary Structures of Proteins:
 
-Proteins structures have levels, and the chain of amino acids is only the primary structure. The candidate antigens need to be evaluated based on their secondary and tertiary structures. The conformation of the proteins and their folding is what imparts functionality to the final 3D structure, and this is important in determining if an antigen will have meaningful interactions with the immune system when used as a vaccine. 
+Protein structures have levels, and the chain of amino acids is only the primary structure. The candidate antigens need to be evaluated based on their secondary and tertiary structures. The conformation of the proteins and their folding is what imparts functionality to the final 3D structure, and this is important in determining if an antigen will have meaningful interactions with the immune system when used as a vaccine. 
 
-Key metrics at this stage of the design process are the number of α-helixes, β-strands, disordered regions, functional domains and solvent access. We already know from the previous analysis that the three proteins are stable. However, the selection of antigens can be narrowed down at this stage based off the analysis of secondary and tertiary structures using Phyre215, and the prediction of folding and disordered regions using PSIPRED16-20. The summary of these results is presented in Table 4.
+Key metrics at this stage of the design process are the number of α-helixes, β-strands, disordered regions, functional domains and solvent access. We already know from the previous analysis that the three proteins are stable. However, the selection of antigens can be narrowed down at this stage based off the analysis of secondary and tertiary structures using Phyre2<sup>15</sup>, and the prediction of folding and disordered regions using PSIPRED<sup>16-20</sup>. The summary of these results is presented in Table 4.
 
-Table 4: Summary from analysis of secondary and tertiary structures of candidate antigen proteins. Protein 1 has the highest number of predicted domains combined with the lowest predicted percentage of disordered regions by Phyre215.
+Table 4: Summary from analysis of secondary and tertiary structures of candidate antigen proteins. Protein 1 has the highest number of predicted domains combined with the lowest predicted percentage of disordered regions by Phyre2<sup>15</sup>.
 
 
 
-Using alignments to pfam via the InterPro21 server, the sequences can be mapped to references to identify the functional domains present in the antigen candidates. It is known from literature that the anthrax PA protein has 4 domains that have been experimentally studied and observed1. Only 2 of the candidate molecules were found to have coverage across 2 domains via InterPro21, while all 3 showed the structural presence of all 4 via the Phyre215 predicted models. 
+Using alignments to pfam via the InterPro<sup>21</sup> server, the sequences can be mapped to references to identify the functional domains present in the antigen candidates. It is known from literature that the anthrax PA protein has 4 domains that have been experimentally studied and observed<sup>1</sup>. Only two of the candidate molecules were found to have coverage across two domains via InterPro<sup>21</sup>, while all three showed the structural presence of all four via the Phyre2<sup>15</sup> predicted models. 
 
 The 4 known domains include Domain 1: Activation domain (furin site, Ca²⁺ binding), Domain 2: Pore-forming/oligomerization, Domain 3: Connector (structural hinge) and Domain 4: Receptor-binding (Ig-like) domain. The Ig-like domain makes, Domain 4 a desirable region for a vaccine candidate and only protein 1 was confirmed by pfam alignment to have that domain in its sequence. Ultimately, while all three proteins are predicted to contain the full PA structure, Protein 1 is the most comprehensively annotated, has lower disorder, and clearer domain resolution, particularly for Domain 4, the critical receptor-binding domain. These characteristics and its reduced likelihood of being allergenic and higher antigenicity, make it the most promising candidate for epitope mapping and vaccine design. 
 
-From this analysis we can select Protein 1 as the candidate to move forward in the workflow. All InterPro21 and PSIPRED16-20 results alongside predicted pdb models from the Phyre215 analysis are provided as supplementary materials and a summary of domain structures and InterPro21 mapping to pfam in protein 1 is presented as a cartoon in Figure 1.
+From this analysis we can select Protein 1 as the candidate to move forward in the workflow. All InterPro21 and PSIPRED<sup>16-20</sup> results alongside predicted pdb models from the Phyre2<sup>15</sup> analysis are provided as supplementary materials and a summary of domain structures and InterPro<sup>21</sup> mapping to pfam in protein 1 is presented as a cartoon in Figure 1.
 
 
 
@@ -173,7 +173,7 @@ For a toxoid vaccine like the one in consideration here which is derived from th
 
 #### Prediction of continuous or sequential B-cell epitopes:
 
-To predict the continuous or sequential B-cell epitopes, the sequence of Protein 1 was submitted to two different servers for prediction and scoring, and the aggregate of both predictions are presented in Figure 2. For the prediction of epitopes, the two methods used were The Immune Epitope Database (IEDB)22 and BepiPred-2.023. Both methods have similar outputs with BepiPred-2.023 providing additional metrics and information about the residues in the protein structure.
+To predict the continuous or sequential B-cell epitopes, the sequence of Protein 1 was submitted to two different servers for prediction and scoring, and the aggregate of both predictions are presented in Figure 2. For the prediction of epitopes, the two methods used were The Immune Epitope Database (IEDB)<sup>22</sup> and BepiPred-2.0<sup>23</sup>. Both methods have similar outputs with BepiPred-2.0<sup>23</sup> providing additional metrics and information about the residues in the protein structure.
 
 
 
@@ -207,15 +207,15 @@ Both methods showed high concordance and indicated the presence of epitopes in t
 
 #### Prediction of conformational or discontinuous B-cell epitopes:
 
-To determine conformational epitopes, it is important to first have an accurate 3D model for the structure of an antigen protein. In previous steps, Phyre215 provided a 3D model, and that can be used for this analysis. However, to confirm that model’s validity, SWISS-MODEL24 was also used to generate a 3D structure for Protein 1 using its sequence. Notably, the model generated by SWISS-MODEL was different from the one predicted by Phyre2 (Phyre 215: c3hvdB 99% identity/100% Confidence, SWISS-Model24: 1t6b 100% identity/ 99.85% Coverage). We need an accurate 3D representation to be able to identify the outer structures of a protein and then select the peptides on the outer regions which are most likely to bind to immune cells.
+To determine conformational epitopes, it is important to first have an accurate 3D model for the structure of an antigen protein. In previous steps, Phyre2<sup>15</sup> provided a 3D model, and that can be used for this analysis. However, to confirm that model’s validity, SWISS-MODEL<sup>24</sup> was also used to generate a 3D structure for Protein 1 using its sequence. Notably, the model generated by SWISS-MODEL was different from the one predicted by Phyre2<sup>15</sup> (Phyre 2: c3hvdB 99% identity/100% Confidence, SWISS-Model24: 1t6b 100% identity/ 99.85% Coverage). We need an accurate 3D representation to be able to identify the outer structures of a protein and then select the peptides on the outer regions which are most likely to bind to immune cells.
 
-To resolve this conflict and choose the best 3D structure, the models were verified via BLASTp25,26 alignment to the PDB database. The top hit was PDB: 1T6B\_X with 100% identity, indicating that the SWISS-model was more accurate because it matched accurately and completely to the full sequence in the reference database. The results from BLASTp25,26 and PDB files for both models are included in supplementary materials.
+To resolve this conflict and choose the best 3D structure, the models were verified via BLASTp<sup>25,26</sup> alignment to the PDB database. The top hit was PDB: 1T6B\_X with 100% identity, indicating that the SWISS-model was more accurate because it matched accurately and completely to the full sequence in the reference database. The results from BLASTp<sup>25,26</sup> and PDB files for both models are included in supplementary materials.
 
-To predict epitopes on the 3D structure, DiscoTope27 hosted on the IEDB server was utilized. The predictions were plotted by residue in Figure 3 and the epitopes were filtered using R to identify the top five to match the previous analysis for linear epitopes and is summarized in Table 6. The scripts used to generate the figures and analysis along with the raw data output from DiscoTope27 are included in supplementary materials. 
+To predict epitopes on the 3D structure, DiscoTope<sup>27</sup> hosted on the IEDB server was utilized. The predictions were plotted by residue in Figure 3 and the epitopes were filtered using R to identify the top five to match the previous analysis for linear epitopes and is summarized in Table 6. The scripts used to generate the figures and analysis along with the raw data output from DiscoTope<sup>27</sup> are included in supplementary materials. 
 
-Figure 3: Figure showing DiscoTope27 Score by Residue. The green shaded portions indicate the presence of conformational epitopes based on DiscoTope27 score threshold of -7.7. There are several predicted epitopes. 
+Figure 3: Figure showing DiscoTope<sup>27</sup> Score by Residue. The green shaded portions indicate the presence of conformational epitopes based on DiscoTope score threshold of -7.7. There are several predicted epitopes. 
 
-Table 6: Table showing Average score, sequences and mapped domains for the top five predicted epitopes from the analysis performed using DiscoTope27. Epitopes are ranked based on Score.
+Table 6: Table showing Average score, sequences and mapped domains for the top five predicted epitopes from the analysis performed using DiscoTope<sup>27</sup>. Epitopes are ranked based on Score.
 
 
 
@@ -225,9 +225,9 @@ There are ample conformational epitopes in the candidate protein and notably, th
 
 When considering binding and immune responses for T-cells as in the case of a toxoid vaccine, it is important to keep in mind that CD4+ T-cells interact with MHC class II complexes on APCs. To model T-cell immune responses it is first necessary to identify peptide interactions between the antigen and MHC class II complexes. Class I complexes are not relevant in the case of a toxoid vaccine because they are responsible for calling CD8+ killer T-cells to infected or cancerous cells to trigger cell death. The toxin antigen is more likely to be engulfed by an APC, processed and then complexed with MHC class II molecules for generating a specific immune response. 
 
-Since the MHC class II molecule is expressed by the human genome, it has various alleles that need to be considered. Each allelic variation has its own set of interactions with the antigenic peptides that need to be predicted. To predict the peptide binding and identify promising T-cell epitopes for inclusion in a toxoid vaccine, comprehensive MHC class II binding predictions were made using two independent and widely used platforms IEDB MHC-II Binding Predictions (NetMHCIIpan 4.1)28 and TepiTool29. Both tools were configured to evaluate 15-mer peptides derived from the sequence of Protein 1 across a broad panel of 25 human HLA-DR, -DP, and -DQ alleles, ensuring population-wide relevance. A prediction threshold of ≤10% percentile rank was applied to identify strong binders, and filtering was done on the results to find a consensus set of peptides across both tools.
+Since the MHC class II molecule is expressed by the human genome, it has various alleles that need to be considered. Each allelic variation has its own set of interactions with the antigenic peptides that need to be predicted. To predict the peptide binding and identify promising T-cell epitopes for inclusion in a toxoid vaccine, comprehensive MHC class II binding predictions were made using two independent and widely used platforms IEDB MHC-II Binding Predictions (NetMHCIIpan 4.1)<sup>28</sup> and TepiTool<sup>29</sup>. Both tools were configured to evaluate 15-mer peptides derived from the sequence of Protein 1 across a broad panel of 25 human HLA-DR, -DP, and -DQ alleles, ensuring population-wide relevance. A prediction threshold of ≤10% percentile rank was applied to identify strong binders, and filtering was done on the results to find a consensus set of peptides across both tools.
 
-The consensus epitope list generated by cross-referencing peptides that were classified as strong binders in both platforms is provided in the supplementary materials along with analysis scripts, raw and summary outputs from each tool. Each shared peptide was scored using a consensus score that was the calculated average of its predicted binding ranks from IEDB28 and TepiTool29. Lower consensus scores indicate higher predicted binding affinity and confidence. Peptides that ranked highly across both tools were prioritized for further consideration and the top five peptides are presented in Table 7 and as a heat map in Figure 4.
+The consensus epitope list generated by cross-referencing peptides that were classified as strong binders in both platforms is provided in the supplementary materials along with analysis scripts, raw and summary outputs from each tool. Each shared peptide was scored using a consensus score that was the calculated average of its predicted binding ranks from IEDB<sup>28</sup> and TepiTool<sup>29</sup>. Lower consensus scores indicate higher predicted binding affinity and confidence. Peptides that ranked highly across both tools were prioritized for further consideration and the top five peptides are presented in Table 7 and as a heat map in Figure 4.
 
 
 
@@ -255,21 +255,21 @@ The high CD4 + T-Cell immunogenicity scores are promising and validate our analy
 
 #### Modeling of predicted epitopes:
 
-Once a comprehensive analysis of epitopes has been conducted for the candidate antigen. The next step is to model the predicted epitopes on to the surface of the 3D structure of the molecule. This will allow visualization of where the antibodies will bind to the antigen in the vaccine antigen. From the previous steps, a highly reliable 3D structure was already generated for the antigen using SWISS-MODEL24. In this case, the antigen protein was determined to have very high similarity to the PDB protein 1t6b. Using this information, the tool ElliPro31 can predict where in the molecule antibodies are most likely to bind based off the antigens structure.
+Once a comprehensive analysis of epitopes has been conducted for the candidate antigen. The next step is to model the predicted epitopes on to the surface of the 3D structure of the molecule. This will allow visualization of where the antibodies will bind to the antigen in the vaccine antigen. From the previous steps, a highly reliable 3D structure was already generated for the antigen using SWISS-MODEL<sup>24</sup>. In this case, the antigen protein was determined to have very high similarity to the PDB protein 1t6b. Using this information, the tool ElliPro<sup>31</sup> can predict where in the molecule antibodies are most likely to bind based off the antigens structure.
 
-In previous steps DiscoTope27 was used to predict discontinuous/conformational epitopes with Epitope Database (IEDB)22 and BepiPred-2.023 being used to predict continuous epitopes. ElliPro31 offers some redundancy and complementarity in that it will recalculate both. However, it offers new information and advantages in its methods and outputs compared to previous tools that provide per-residue scores rather than clearly defined epitope regions. Overall, ElliPro31 offers other key advantages that make it better suited for structural modeling and visualization of discrete antibody-binding regions or epitopes.
+In previous steps DiscoTope<sup>27</sup> was used to predict discontinuous/conformational epitopes with Epitope Database (IEDB)<sup>22</sup> and BepiPred-2.0<sup>23</sup> being used to predict continuous epitopes. ElliPro<sup>31</sup> offers some redundancy and complementarity in that it will recalculate both. However, it offers new information and advantages in its methods and outputs compared to previous tools that provide per-residue scores rather than clearly defined epitope regions. Overall, ElliPro<sup>31</sup> offers other key advantages that make it better suited for structural modeling and visualization of discrete antibody-binding regions or epitopes.
 
-Most notably, Ellipro31 clusters residues into defined epitope regions (continuous and discontinuous), directly identifying likely immunogenic patches using an ellipsoid approximation algorithm to define the protein's 3D envelope and assigns a protrusion index to each residue. This provides a more holistic view of surface-exposed and protruding epitopes. Lastly, its output can be easily visualized with tools such as UCSF ChimeraX32. All outputs from ElliPro31 and scripts including cxc commands used to generate the model figures are presented in supplementary materials. Continuous epitopes on the surface of Protein 1 are presented in Figure 5 and discontinuous epitopes are presented in Figure 6. Additional figures with the molecular backbone removed and only the epitopes highlighted are included in the appendix to allow easy visualization of just the epitopes (Appendix Figure 4, 5).
+Most notably, Ellipro<sup>31</sup> clusters residues into defined epitope regions (continuous and discontinuous), directly identifying likely immunogenic patches using an ellipsoid approximation algorithm to define the protein's 3D envelope and assigns a protrusion index to each residue. This provides a more holistic view of surface-exposed and protruding epitopes. Lastly, its output can be easily visualized with tools such as UCSF ChimeraX<sup>32</sup>. All outputs from ElliPro<sup>31</sup> and scripts including cxc commands used to generate the model figures are presented in supplementary materials. Continuous epitopes on the surface of Protein 1 are presented in Figure 5 and discontinuous epitopes are presented in Figure 6. Additional figures with the molecular backbone removed and only the epitopes highlighted are included in the appendix to allow easy visualization of just the epitopes (Appendix Figure 4, 5).
 
 
 
-Figure 5: 3D structure of Protein 1 with continuous epitopes predicted by ElliPro31 highlighted in ranked order. Ranking is based on protrusion index (PI) score which indicates how accessible and immunogenic the epitope is. The top five epitopes are shown with Epitope 1 being the most immunogenic and likely to bind an antibody (score = 0.8) and Epitope 5 being the least likely (score = 0.7). There were 16 total continuous epitopes predicted.
+Figure 5: 3D structure of Protein 1 with continuous epitopes predicted by ElliPro<sup>31</sup> highlighted in ranked order. Ranking is based on protrusion index (PI) score which indicates how accessible and immunogenic the epitope is. The top five epitopes are shown with Epitope 1 being the most immunogenic and likely to bind an antibody (score = 0.8) and Epitope 5 being the least likely (score = 0.7). There were 16 total continuous epitopes predicted.
 
  
 
 
 
-Figure 6: 3D structure of Protein 1 with discontinuous epitopes predicted by ElliPro31 highlighted in ranked order. Ranking is based on protrusion index (PI) score which indicates how accessible and immunogenic the epitope is. The top five epitopes are shown with Epitope 1 being the most immunogenic and likely to bind an antibody (score = 0.74) and Epitope 5 being the least likely (score = 0.5). Only 5 discontinuous epitopes were predicted in total. 
+Figure 6: 3D structure of Protein 1 with discontinuous epitopes predicted by ElliPro<sup>31</sup> highlighted in ranked order. Ranking is based on protrusion index (PI) score which indicates how accessible and immunogenic the epitope is. The top five epitopes are shown with Epitope 1 being the most immunogenic and likely to bind an antibody (score = 0.74) and Epitope 5 being the least likely (score = 0.5). Only five discontinuous epitopes were predicted in total. 
 
 
 
@@ -279,15 +279,13 @@ For the purposes of this workflow, however, it is feasible to proceed to the nex
 
 ### Analysis of Population Coverage of Peptide Relevant Alleles:
 
-In one of the previous analyses when predicting MHC Class II epitopes, the subject of alleles was touched upon. When it comes to global populations, alleles are distributed unevenly across the world and hence immune responses tend to be regulated by the genetic makeup of any given population. During the analysis of MHC II complexes using TepiTool29, part of the output included peptide sequences from the antigen being identified as epitopes and their mapping to known allele variants of MHC class II alleles. This information can be used with the IEDB Population Coverage Calculation33 tool to determine if the epitopes in the candidate antigen will have recognition or coverage in a population. This is a way to determine if the immune response will be elicited equally in different populations. A key step in vaccine design
+In one of the previous analyses when predicting MHC Class II epitopes, the subject of alleles was touched upon. When it comes to global populations, alleles are distributed unevenly across the world and hence immune responses tend to be regulated by the genetic makeup of any given population. During the analysis of MHC II complexes using TepiTool<sup>29</sup>, part of the output included peptide sequences from the antigen being identified as epitopes and their mapping to known allele variants of MHC class II alleles. This information can be used with the IEDB Population Coverage Calculation<sup>33</sup> tool to determine if the epitopes in the candidate antigen will have recognition or coverage in a population. This is a way to determine if the immune response will be elicited equally in different populations. A key step in vaccine design
 
-In this workflow, Pakistan and Canada were chosen as the candidate populations to be studied for coverage. The scripts used to generate the input for IEDBs Population Coverage tool33 from the raw TepiTool29 output as well as all the outputs from the analysis are included in supplementary materials. The population coverage for Pakistan was 1.18% which is negligible and not worth considering but is included in the appendix (Appendix Figure 6). However, the coverage for Canada was promising and can be seen in Figure 7 and is summarized in Table 9.
-
-
-
-Figure 7: Output from IEDBs population coverage tool33. The results show that Approximately 90% of the Canadian population would likely respond to at least one of the predicted epitopes and the left skew indicates that Individuals commonly recognize 2–4 epitopes based on their HLA combinations. This is a positive result for a vaccine candidate.
+In this workflow, Pakistan and Canada were chosen as the candidate populations to be studied for coverage. The scripts used to generate the input for IEDBs Population Coverage tool<sup>33</sup> from the raw TepiTool<sup>29</sup> output as well as all the outputs from the analysis are included in supplementary materials. The population coverage for Pakistan was 1.18% which is negligible and not worth considering but is included in the appendix (Appendix Figure 6). However, the coverage for Canada was promising and can be seen in Figure 7 and is summarized in Table 9.
 
 
+
+Figure 7: Output from IEDBs population coverage tool<sup>33</sup>. The results show that Approximately 90% of the Canadian population would likely respond to at least one of the predicted epitopes and the left skew indicates that Individuals commonly recognize 2–4 epitopes based on their HLA combinations. This is a positive result for a vaccine candidate.
 
 
 
@@ -297,9 +295,6 @@ Figure 7: Output from IEDBs population coverage tool33. The results show that Ap
 
 
 
- 
-
- 
 
 
 
@@ -321,7 +316,7 @@ Overall, the results indicate that Protein 1 is rich in epitopes that can illici
 
 ## Conclusion:
 
-Having gone through the steps of the toxoid vaccine design, it is worth mentioning that vaccines already exist for the bacterium responsible for the toxin34. Before the use of anthrax as a bioweapon, there were already vaccines available due to agricultural exposure to the bacterium and its spores34. Following the use of the spores as a bioweapon, newer vaccine models were generated and typically relied on weakened strains of the bacterium and relied on antibiotics to remove the bacteria before it could overwhelm the body with toxins. To date there are several licensed products that can be considered toxin vaccines for anthrax35. 
+Having gone through the steps of the toxoid vaccine design, it is worth mentioning that vaccines already exist for the bacterium responsible for the toxin<sup>34</sup>. Before the use of anthrax as a bioweapon, there were already vaccines available due to agricultural exposure to the bacterium and its spores<sup>34</sup>. Following the use of the spores as a bioweapon, newer vaccine models were generated and typically relied on weakened strains of the bacterium and relied on antibiotics to remove the bacteria before it could overwhelm the body with toxins. To date there are several licensed products that can be considered toxin vaccines for anthrax<sup>35</sup>. 
 
 The work presented here is not in any way affiliated with, reflective of or derived from any licensed vaccine product for anthrax or its toxins. This was done as part of a course project to solidify concepts and learn skills pertinent to immunoinformatic and vaccine design principals. As an initial analysis into a potential vaccine design, this project hopes to highlight key steps in the selection and evaluation of an antigen. The PA protein in anthrax was chosen due to its benign nature and key function on the ability of the anthrax toxin to do harm to host cells.
 
@@ -330,6 +325,7 @@ Through the process of reverse vaccine design, candidate antigen sequences were 
 While there are hundreds and thousands of other similar structures to consider as candidates for an anthrax toxin vaccine, they can be compared against the sequence provided in this workflow as a baseline. The modeled 3D structure can be used to study the docking of antibodies to a potential vaccine. The structure identified can serve as a template for modification and development of a synthetic vaccine as well. Notably, no toxicity analysis was done on the high-quality epitopes identified here. Analysis of those regions for toxic reactions in the body would be necessary to ensure a safety profile for any medical usage. 
 
 The next logical steps in developing a product would require more detailed modeling and further modifications necessary for manufacturing and synthesis. Steps that exceed the scope of this project. The materials and analysis generated as part of this project however are necessary for any future design aspects and represent a key part of the reverse vaccine design pipeline. Hopefully this analysis reduces barriers in any future vaccine design for anthrax toxin and is a resource for those looking to learn the process for reverse vaccine design.
+
 
 ## References:
 
@@ -407,24 +403,6 @@ Wang, J. Y., & Roehrl, M. H. (2005). Anthrax vaccine design: strategies to achie
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ## Appendix:
 
 #### 
@@ -455,11 +433,11 @@ Appendix Figure 3: Appendix figure for protein 3 showing average antigenicity pe
 
 
 
-Appendix Figure 4: Appendix figure for 3D structure of Protein 1 with continuous epitopes predicted by ElliPro31 highlighted in ranked order. Main structural backbone of Protein 1 is hidden to only show epitopes. Ranking is based on protrusion index (PI) score which indicates how accessible and immunogenic the epitope is. The top five epitopes are shown with Epitope 1 being the most immunogenic and likely to bind an antibody (score = 0.8) and Epitope 5 being the least in the figure (score = 0.7). There were 16 total epitopes predicted.
+Appendix Figure 4: Appendix figure for 3D structure of Protein 1 with continuous epitopes predicted by ElliPro<sup>31</sup> highlighted in ranked order. Main structural backbone of Protein 1 is hidden to only show epitopes. Ranking is based on protrusion index (PI) score which indicates how accessible and immunogenic the epitope is. The top five epitopes are shown with Epitope 1 being the most immunogenic and likely to bind an antibody (score = 0.8) and Epitope 5 being the least in the figure (score = 0.7). There were sixteen total epitopes predicted.
 
 
 
-Appendix Figure 5: Appendix figure for 3D structure of Protein 1 with discontinuous epitopes predicted by ElliPro31 highlighted in ranked order. Main structural backbone of Protein 1 is hidden to only show epitopes. Ranking is based on protrusion index (PI) score which indicates how accessible and immunogenic the epitope is. The top five epitopes are shown with Epitope 1 being the most immunogenic and likely to bind an antibody (score = 0.74) and Epitope 5 being the least in the figure (score = 0.5). 
+Appendix Figure 5: Appendix figure for 3D structure of Protein 1 with discontinuous epitopes predicted by ElliPro<sup>31</sup> highlighted in ranked order. Main structural backbone of Protein 1 is hidden to only show epitopes. Ranking is based on protrusion index (PI) score which indicates how accessible and immunogenic the epitope is. The top five epitopes are shown with Epitope 1 being the most immunogenic and likely to bind an antibody (score = 0.74) and Epitope 5 being the least in the figure (score = 0.5). 
 
 
 
@@ -467,11 +445,11 @@ Appendix Figure 5: Appendix figure for 3D structure of Protein 1 with discontinu
 
 
 
-Appendix Figure 6: Appendix figure from IEDB33 population coverage analysis of the population of Pakistan. The low values of around 0–1%, which are effectively negligible indicate that the selected epitopes are not representative of HLA alleles commonly found in Pakistan. This could also be due to a lack of relevant alleles in the database initially, hence the mapping and subsequent prediction not being possible.
+Appendix Figure 6: Appendix figure from IEDB<sup>33</sup> population coverage analysis of the population of Pakistan. The low values of around 0–1%, which are effectively negligible indicate that the selected epitopes are not representative of HLA alleles commonly found in Pakistan. This could also be due to a lack of relevant alleles in the database initially, hence the mapping and subsequent prediction not being possible.
 
 
 
-Appendix Figure 7: Appendix figure from IEDB33 population coverage analysis of the population of South Asia as a whole. The values are much higher than for Pakistan with coverage around 98.9%, and the average number of hits is 17.51. This could be evidence of a lack of research on relevant alleles in the database of alleles for Pakistan.
+Appendix Figure 7: Appendix figure from IEDB<sup>33</sup> population coverage analysis of the population of South Asia as a whole. The values are much higher than for Pakistan with coverage around 98.9%, and the average number of hits is 17.51. This could be evidence of a lack of research on relevant alleles in the database of alleles for Pakistan.
 
 
 
